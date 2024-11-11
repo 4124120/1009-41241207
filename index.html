@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶配對遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>記憶配對遊戲</h1>
+        <div class="controls">
+            <label for="timer-select">倒數時間：</label>
+            <select id="timer-select">
+                <option value="5">5秒</option>
+                <option value="10" selected>10秒</option>
+                <option value="15">15秒</option>
+            </select>
+            <label for="grid-select">網格大小：</label>
+            <select id="grid-select">
+                <option value="2">2x2</option>
+                <option value="4" selected>4x4</option>
+                <option value="6">6x6</option>
+            </select>
+            <button id="start-game">開始遊戲</button>
+        </div>
+        <p id="timer">倒數計時：10秒</p>
+        <div id="game-board" class="game-board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
